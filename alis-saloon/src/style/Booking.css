@@ -1,0 +1,75 @@
+.booking-page{
+  min-height:100vh;
+  background:#0b0b0b;
+  color:white;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:60px;
+
+  padding:80px 40px;
+}
+
+.booking-left{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.booking-left span{
+  color:#D4AF37;
+  letter-spacing:4px;
+}
+
+.booking-left h1{
+  font-family:'Playfair Display',serif;
+  font-size:5rem;
+  margin:20px 0;
+}
+
+.booking-left p{
+  color:#aaa;
+  max-width:450px;
+}
+
+.booking-form{
+  border:1px solid rgba(212,175,55,.2);
+  padding:40px;
+  background:#121212;
+
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+  background:#1a1a1a;
+  border:1px solid #333;
+  color:white;
+
+  padding:14px;
+}
+
+.booking-form button{
+  background:#D4AF37;
+  color:black;
+  border:none;
+
+  padding:16px;
+  font-weight:700;
+}
+@media(max-width:768px){
+
+  .booking-page{
+    grid-template-columns:1fr;
+    padding:40px 20px;
+  }
+
+  .booking-left h1{
+    font-size:3rem;
+  }
+
+}
